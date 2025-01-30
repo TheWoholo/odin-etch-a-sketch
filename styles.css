@@ -1,0 +1,19 @@
+
+.gridcell{
+    border-style: solid;
+    height:30px;
+    width:30px;
+}
+
+.gridrow{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.square_grid{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
