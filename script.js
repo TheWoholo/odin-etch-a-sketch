@@ -29,7 +29,22 @@ function addHoverEffect(){
     });
 }
 
+function addResizeOption(){
+    const button = document.querySelector('.resizeButton');
+    button.addEventListener('click', function(){
+        let side_length = prompt("Enter side length in terms of no. cells in a row");
+        createNewGrid(side_length);
+    })
+}
 
-let side_length=4;
-createSquareGrid(side_length);
-addHoverEffect();
+function createNewGrid(side_length){
+    createSquareGrid(side_length);
+    addHoverEffect();
+}
+
+function initialSetup(){
+    createNewGrid(4);
+    addResizeOption();
+}
+
+initialSetup();
